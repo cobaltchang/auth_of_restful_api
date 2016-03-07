@@ -20,5 +20,5 @@ from django.contrib import admin
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^swagger/', include('rest_framework_swagger.urls')),
-    url(r'^djoser/', include('djoser.urls')),
+    url(r'^djoser/', include('djoser.urls.authtoken')),
 ]
